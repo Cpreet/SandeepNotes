@@ -22,7 +22,8 @@ A-     Var-Can be re declared. | not commonly used in modern javascript
     Const- Cannot be re declared or updated | Encouraged for better readability and preventing accidental reassignments.
     
 3 What does it mean when we say var is "function-scoped" and let and const are "block-scoped"?
-
+A-  var is function-scoped : If you declare a variable with var, it works for thw whole function. It does not care about {}
+    let and const are blocked-scoped : the work only inside the {} block where they are declaredOB
 
 4 Why is it recommended to avoid using var in modern JavaScript?
     - To avoid re-declaration
@@ -54,8 +55,11 @@ A-     Null means that the value is defined as null (amswers)
     and undefined means the value is not defined as of now.
 
 3 How does the Symbol data type differ from other primitive types? Provide an example.
+a-  A symbol is special type of primitive in JS that is always unique, even if it has the same description.
+    Not converted to string like other primitives types
 
 4 What is BigInt, and why was it introduced in JavaScript?
+a-      
 
 5 Describe the non-primitive types in JavaScript. How do they differ from primitive types?
 A-     Non-primitive data types in JavaScript are complex structures used to store multiple values or more advanced information.
@@ -73,4 +77,4 @@ A-    JavaScript is a dynamically typed language, which means you don’t need t
     Eg-
     let value = 10;      // value is a number
     value = "Hello";     // now value is a string
-    value = true;        // now value is a boolean
+    vaue = true;        // now value is a boolean
