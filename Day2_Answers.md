@@ -43,21 +43,43 @@
 
 
 ### Assignment Operators
-3. **Simple Assignments**  
-   - What does the `+=` operator do in JavaScript?  
-   - How does the `-=` operator modify the value of a variable?  
+**Simple Assignments**  
+   - The += operator adds the value on the right to the variable on the left and updates the variable.
+      ```
+      let x = 5;
+      x += 3; // x is now 8
+      ```
+  
+   - The -= operator subtracts the value on the right from the variable on the left and updates the variable with the result.  
+      ```
+      let x = 10;
+      x -= 3; // x is now 7
+      ```
 
-4. **Complex Assignment**  
-   - If `let x = 5; x *= 3;`, what will be the value of `x`?
+**Complex Assignment**  
+   -  ```
+      let x = 5;
+      x *= 3; // x = 5 * 3 = 15
+      ```
 
 ### Comparison Operators
-5. **Equality vs Strict Equality**  
-   - What is the difference between `==` and `===` in JavaScript?  
-   - Why does `0 == false` return `true` but `0 === false` return `false`?  
+**Equality vs Strict Equality**  
+   - == checks for value equality with type coercion.
+   
+      === checks for both value and type equality (strict comparison).  
 
+   - The difference between 0 == false and 0 === false comes down to type coercion:
+     - false is automatically coerced into the number 0 (since false is considered 0 when converted to a number).
+     - 0 is a number and false is a boolean, so since they are of different types, the comparison is false.
+
+  
 6. **Other Comparisons**  
-   - What is the result of `"5" > 3` in JavaScript, and why?  
-   - Explain the difference between `!=` and `!==`.
+   - JavaScript performs type coercion when comparing values with different types.
+      - JavaScript converts the string "5" to a number for the comparison and 5 is greater than 3 the value will be true.
+   
+   - The difference between != and !== in JavaScript is similar to the difference between == and ===:
+      -  != allows type coercion, so it compares values after converting them to the same type.
+      -  !== checks both the value and the type, without type coercion. 
 
 ### Logical Operators
 7. **Combining Conditions**  
