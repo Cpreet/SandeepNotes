@@ -8,7 +8,7 @@
    2. The "++" operator is the increment operator. It      
       increases the value of a variable by 1.It can be used in two ways
          1. Post Increment(x++)
-            ```
+            ```js
             let x = 5;
             let y = x++; // x's current value is assigned to y, then x is           incremented
             console.log(x); // 6
@@ -16,7 +16,7 @@
             ```
 
          2. Pre Increment (++x)
-            ``` javscript
+            ``` javascript
             let x = 5;
             let y = ++x; // x is incremented first, then assigned to y
             console.log(x); // 6
@@ -35,8 +35,8 @@
       - It raises the first operand (the base) to the power of the second operand (the exponent).
 
 
-   2.    ```
-         let x = 2;
+   2.    ```js
+            let x = 2;
          x **= 3; // x = x ** 3, which is 2 ** 3 = 8
          console.log(x); // 8
          ```
@@ -45,19 +45,19 @@
 ### Assignment Operators
 **Simple Assignments**  
    - The += operator adds the value on the right to the variable on the left and updates the variable.
-      ```
+      ```JavaScript
       let x = 5;
       x += 3; // x is now 8
       ```
   
    - The -= operator subtracts the value on the right from the variable on the left and updates the variable with the result.  
-      ```
+      ```JavaScript
       let x = 10;
       x -= 3; // x is now 7
       ```
 
 **Complex Assignment**  
-   -  ```
+   -  ```JavaScript
       let x = 5;
       x *= 3; // x = 5 * 3 = 15
       ```
@@ -82,24 +82,70 @@
       -  !== checks both the value and the type, without type coercion. 
 
 ### Logical Operators
-7. **Combining Conditions**  
-   - What does the `&&` operator do? Provide an example.  
-   - What is the role of `||` in JavaScript?  
-   - How does the `!` operator invert Boolean values?  
+   **Combining Conditions**  
+   - The && operator means AND. It checks if both conditions   
+      are true. 
+      ```JavaScript
+         let x = 5;
+         let y = 10;
+         if (x > 0 && y > 0) {
+        console.log("Both numbers are positive.");
+         }
+      ```
+   - The || operator is the logical OR operator in JavaScript. It checks if at least one condition is true. If any condition is true, it returns true; otherwise, it returns false.
+   ``` js
+         let x = 5;
+         let y = -10;
+         if (x > 0 || y > 0) {
+         console.log("At least one number is positive.");
+         }
+   ```
+   -  The ! operator is the logical NOT operator in     
+      JavaScript. It inverts a Boolean value:
+      - If the value is true, it becomes false.
+      - If the value is false, it becomes true.  
 
 ### Ternary Operator
-8. **Shorthand Conditional**  
-   - Write a JavaScript expression using the ternary operator to check if a number is even or odd.  
+**Shorthand Conditional**  
+   
+   - ```js
+      let number = 7;
+      let result = (number % 2 === 0) ? "Even" : "Odd";
+      console.log(result); // Output: "Odd"
+      ```
 
 ### Conditionals
-9. **If Statement**  
-   - How does an `if` statement work in JavaScript?  
-   - Provide an example where an `if` statement is used to validate user input.
+**If Statement**  
+   - An if statement in JavaScript executes a block of code only if the condition is true. If the condition is false, the code block is skipped.
+   For Ex.
+      ```js
+      let age = 18;
+      if (age >= 18) {
+      console.log("You are an adult.");
+      }
+      ```
 
-10. **If...else Statement**  
-    - When would you use an `if...else` statement?  
-    - Rewrite the following code using an `if...else` statement:  
-      ```javascript
-      let isValid = true;
-      console.log(isValid ? "Valid" : "Invalid");
+   - ```JavaScript
+      let username = prompt("Enter your username:");
+      if (username) {
+      console.log("Welcome, " + username + "!");
+      } else {
+      console.log("Username cannot be empty.");
+      }
+      ```
+
+
+**If...else Statement**    
+   -  You use an if...else statement when you want to execute  
+      one block of code if a condition is true and a different 
+      block of code if the condition is false. 
+
+   -  ```js
+      let isvalid = true;
+      
+      if (isValid){
+         console.log("Valid");
+      } else{
+         console.log("Invalid")
+      }
       ```
