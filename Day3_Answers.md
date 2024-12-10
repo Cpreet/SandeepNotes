@@ -41,9 +41,9 @@
    - A `while` loop checks the condition before running the    loop body, so it might not execute at all. A `do...while` loop checks the condition after running the loop body, so it always executes at least once.
 
 
-   -  ```JavaScript
+   - ```JavaScript
       let input;
-      do {
+      do {clear
       input = prompt("Enter a word (type 'stop' to exit):");
       } while (input !== "stop");
       ```
@@ -67,13 +67,19 @@
 
 #### String Basics
 1. **String Creation**  
-   - How can you create a string in JavaScript?  
-   - What are the differences between single quotes, double quotes, and backticks?
+   - To create a string in JavaScript, you can use:
+      1. Single quotes: `'your string'`
+      2. Double quotes: `"your string"`
+      3. Backticks: `` `your string` ``  
+
+   -  -  **Single quotes** and **double quotes** are the same       for simple strings.
+      - **Backticks** allow embedding variables and multi-line strings.
 
 2. **String Immutability**  
-   - What does it mean that strings are immutable in JavaScript?  
-   - If strings are immutable, how can you modify or manipulate them?
+   - Strings are **immutable** in JavaScript, meaning once created, they can't be changed. Any modification creates a new string instead of changing the original one.
 
+   - Even though strings are immutable in JavaScript, you can still modify or manipulate them by creating new strings. You can use methods like replace(), slice(), or concat() to generate new strings based on the original one.
+      
 3. **String Length**  
    - How do you find the length of a string in JavaScript?  
    - What will `console.log("Hello".length);` output?
