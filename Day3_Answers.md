@@ -15,20 +15,38 @@
          }
       }
       ```
-   - How can you terminate a `for` loop prematurely? Provide an example.
+   - In JavaScript, you can terminate a for loop prematurely using the break statement.
+
+   ```JavaScript
+      for (let i = 1; i <= 10; i++) {
+       if (i === 5) {
+        break; // Exits the loop when i equals 5
+       }
+       console.log(i);
+        }
+   ```
 
 3. **while Loop**  
-   - What happens if the condition in a `while` loop is always `true`?  
-   - Rewrite this `for` loop using a `while` loop:  
-     ```javascript
-     for (let i = 0; i < 3; i++) {
+   - If the condition in a `while` loop is always `true`, it creates an **infinite loop**, running indefinitely unless interrupted by a `break` statement or external force.
+
+   - ```JavaScript
+         let i = 0;
+         while (i < 3) {
          console.log(i);
-     }
-     ```
+         i++;
+         }
+      ```
 
 4. **do...while Loop**  
-   - How is a `do...while` loop different from a `while` loop?  
-   - Write a `do...while` loop that prompts a user until they enter the word "stop."
+   - A `while` loop checks the condition before running the    loop body, so it might not execute at all. A `do...while` loop checks the condition after running the loop body, so it always executes at least once.
+
+
+   -  ```JavaScript
+      let input;
+      do {
+      input = prompt("Enter a word (type 'stop' to exit):");
+      } while (input !== "stop");
+      ```
 
 5. **for...of Loop**  
    - What types of objects can a `for...of` loop iterate over?  
