@@ -2,11 +2,19 @@
 
 #### General Loop Questions
 1. **Loop Fundamentals**  
-   - What is the main difference between a `for` loop and a `while` loop?  
-   - Explain when you would use a `do...while` loop instead of a `while` loop.
+   - A for loop runs a set number of times, while a while loop 
+      runs as long as a condition is true. 
+       
+   - do...while loop is used when you want the code to run at least once before checking the condition.
 
 2. **for Loop**  
-   - Write a `for` loop to print all even numbers between 1 and 10.  
+   - ```JavaScript
+      for (let i=0; i<=10; i++){
+         if (i % 2 ===0){
+         console.log(i)
+         }
+      }
+      ```
    - How can you terminate a `for` loop prematurely? Provide an example.
 
 3. **while Loop**  
