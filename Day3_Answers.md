@@ -81,22 +81,45 @@
    - Even though strings are immutable in JavaScript, you can still modify or manipulate them by creating new strings. You can use methods like replace(), slice(), or concat() to generate new strings based on the original one.
       
 3. **String Length**  
-   - How do you find the length of a string in JavaScript?  
-   - What will `console.log("Hello".length);` output?
+   -  ```JavaScript
+      const myString = "Hello, world!";
+      const length = myString.length;
+      console.log(length); // Output: 13
+      ```
+   - 5
 
 4. **Indices and Accessing Characters**  
-   - How can you access individual characters in a string?  
-   - What happens if you try to access an index that is out of bounds in a string?
+   - Indices Strings
+      ```javascript
+      str[O], str[1], str[2]
+      ```  
+   - Undefined
 
 #### Template Literals and Interpolation
 5. **Template Literals**  
-   - What are template literals, and how are they different from regular strings?  
-   - Write a template literal to include a variable `name` in the sentence:  
-     `"Hello, my name is <name>."`
+   - Template literals are strings enclosed in backticks (`) instead of quotes (' or "). They are more flexible than regular strings. Here's how they differ:
+      1. Interpolation:
+         You can embed variables and expressions directly using ${}.
+      2. Multi-line Strings
+         Template literals support multi-line text without special characters.
+      3. Expressions
+         Any JavaScript code can be used inside ${}.
+
+   Regular strings don't have these features and need concatenation (+) or escape characters (\n) for similar results.
+   -  ```js 
+      `Hello, my name is ${name}.`
+      ```
 
 6. **String Interpolation**  
-   - Explain how string interpolation works in JavaScript.  
-   - Write an example of string interpolation to calculate the sum of two variables.
+   - String interpolation in JavaScript is a way to include variables or expressions directly inside a string. It uses template literals, which are strings enclosed in backticks (`).
+    
+   - ```javascript
+      const num1 = 10;
+      const num2 = 20;
+      const sum = `The sum of ${num1} and ${num2} is ${num1 + num2}.`;
+      console.log(sum);
+      // Output: The sum of 10 and 20 is 30.
+      ```
 
 #### String Methods
 7. **Common String Methods**  
